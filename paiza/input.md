@@ -75,6 +75,7 @@ AN,1 AN,2 AN,3 ... AN,N
 
 以下の例は、`内包表記`を使用しています
 ```python
+N = int(input())
 # 複数行の文字列を受け取る場合
 A = [input().split() for _ in range(N)]
 
