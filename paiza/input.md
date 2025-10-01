@@ -36,6 +36,18 @@ X, Y, Z = map(int, input().split())
 H, M, S = map(float, input().split())
 ```
 
+## カンマ区切り文字列を受け取る場合
+
+```python
+# 文字列を受け取る場合
+A, B, C = input().split(",")
+
+# 可変長の文字列を受け取る場合
+S = input().split(",")
+for i in range(len(S)):
+    print(str[i])
+```
+
 ## 1行の配列を受け取る場合
 【入力】  
 A1 A2 A3 ... AN
@@ -43,6 +55,8 @@ A1 A2 A3 ... AN
 ```python
 # 文字列を受け取る場合
 A = input().split()
+for S in A:
+    print(S)
 
 # 整数列を受け取る場合
 A = list(map(int, input().split()))
@@ -61,6 +75,7 @@ AN,1 AN,2 AN,3 ... AN,N
 
 以下の例は、`内包表記`を使用しています
 ```python
+N = int(input())
 # 複数行の文字列を受け取る場合
 A = [input().split() for _ in range(N)]
 
